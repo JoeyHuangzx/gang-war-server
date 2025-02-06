@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "hzx",
+      "gold": 1000,
+      "currentLevel": 3,
+      "purchasedGrids": 1,
+      "characters": [],
+      "unlockedCharacters": [],
+      "formation": []
+    }
+  ]
+}
