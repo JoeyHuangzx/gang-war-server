@@ -1,14 +1,19 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "hzx",
-      "gold": 1000,
-      "currentLevel": 3,
-      "purchasedGrids": 1,
-      "characters": [],
-      "unlockedCharacters": [],
-      "formation": []
+      "id": 0,
+      "name": "游客",
+      "gold": 100,
+      "level": 1,
+      "createDate": 1739001277103,
+      "buyTimes": 0,
+      "buyCellTimes": 0,
+      "unlock": [
+        ""
+      ],
+      "onlineReward": 0,
+      "finishGuides": [],
+      "hasUsedFireBall": false
     }
   ]
 }
