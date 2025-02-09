@@ -15,7 +15,7 @@ const defaultData = {
   createDate: Date.now(), //记录创建时间
   buyTimes: 0, //购买次数
   buyCellTimes: 0, //购买格子的次数
-  unlock: [''], //已解锁士兵
+  unlock: [], //已解锁士兵
   onlineReward: 0, //在线奖励的数值
   finishGuides: [], //完成的引导步骤
   hasUsedFireBall: false, //是否使用过火球技能
@@ -66,6 +66,14 @@ app.get("/users/:id", (req, res) => {
 // 创建新用户
 app.post("/users", (req, res) => {
   const newUser = req.body;
+  // 添加新用户前先根据id和name查重
+  const userExists = db.data?.users.some(
+    (u) => u.id === newUser.id || u.name === newUser.name
+  );
+  if (userExists) {
+    sendResponse(res, { error: "User with same id or name already exists" }, 400);
+    return;
+  }
   db.data?.users.push(newUser);
   db.write()
     .then(() => {
