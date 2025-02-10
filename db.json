@@ -4,12 +4,55 @@
       "id": 0,
       "name": "游客",
       "gold": 100,
-      "level": 1,
-      "createDate": 1739001277103,
+      "currentLevel": 1,
+      "createDate": 1739169607542,
       "buyTimes": 0,
       "buyCellTimes": 0,
-      "unlock": [
-        ""
+      "unlockedCharacters": [],
+      "onlineReward": 0,
+      "finishGuides": [],
+      "hasUsedFireBall": false
+    },
+    {
+      "id": "8c72cdc2-ca35-4aa4-aead-c7cc281b8e19",
+      "name": "hzx",
+      "gold": 0,
+      "currentLevel": 1,
+      "createDate": 1739169621179,
+      "buyTimes": 0,
+      "buyCellTimes": 0,
+      "unlockedCharacters": [
+        101
+      ],
+      "onlineReward": 0,
+      "finishGuides": [],
+      "hasUsedFireBall": false
+    },
+    {
+      "id": "e6bcf297-922c-4373-8a4e-70a87f6d6d4f",
+      "name": "34",
+      "gold": 0,
+      "currentLevel": 1,
+      "createDate": 1739169635266,
+      "buyTimes": 0,
+      "buyCellTimes": 0,
+      "unlockedCharacters": [
+        101
+      ],
+      "onlineReward": 0,
+      "finishGuides": [],
+      "hasUsedFireBall": false
+    },
+    {
+      "id": "74aa1ea5-9492-4210-958f-3968aba4274c",
+      "name": "123",
+      "gold": 0,
+      "currentLevel": 1,
+      "createDate": 1739169646499,
+      "buyTimes": 0,
+      "buyCellTimes": 0,
+      "unlockedCharacters": [
+        101
       ],
       "onlineReward": 0,
       "finishGuides": [],
