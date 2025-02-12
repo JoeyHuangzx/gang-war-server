@@ -21,6 +21,37 @@ const defaultData = {
   onlineReward: 0, //在线奖励的数值
   finishGuides: [], //完成的引导步骤
   hasUsedFireBall: false, //是否使用过火球技能
+  formation: [
+    
+  ]
+};
+
+const newUser = {
+  id: generateUniqueId(), // 生成不重复的 ID
+  name,
+  gold: 1000,
+  currentLevel: 1,
+  createDate: Date.now(),
+  buyTimes: 0,
+  buyCellTimes: 0,
+  unlockedCharacters: [101],
+  onlineReward: 0,
+  finishGuides: [],
+  hasUsedFireBall: false,
+  formation: [
+   {
+    id:1,
+    soldierId:101,
+   }, 
+   {
+    id:2,
+    soldierId:101,
+   },
+   {
+    id:3,
+    soldierId:101,
+   }
+  ]
 };
 
 // 设置数据存储文件和数据库类型
@@ -87,19 +118,6 @@ app.post('/users', (req, res) => {
     return sendResponse(res, { error: 'Name is required' }, 400);
   }
 
-  const newUser = {
-    id: generateUniqueId(), // 生成不重复的 ID
-    name,
-    gold: 0,
-    currentLevel: 1,
-    createDate: Date.now(),
-    buyTimes: 0,
-    buyCellTimes: 0,
-    unlockedCharacters: [101],
-    onlineReward: 0,
-    finishGuides: [],
-    hasUsedFireBall: false,
-  };
 
   db.data?.users.push(newUser);
   db.write()
