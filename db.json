@@ -5,85 +5,70 @@
       "name": "游客",
       "gold": 100,
       "currentLevel": 1,
-      "createDate": 1739169607542,
+      "createDate": 1739889044347,
       "buyTimes": 0,
       "buyCellTimes": 0,
-      "unlockedCharacters": [],
+      "unlockFighters": [],
       "onlineReward": 0,
       "finishGuides": [],
-      "hasUsedFireBall": false
+      "hasUsedFireBall": false,
+      "formation": []
     },
     {
-      "id": "9c312335-0ede-4b59-980e-d4bdda15e5cd",
+      "id": "6145cab6-b39b-4b26-aa41-f4b0c8774fae",
       "name": "hzx",
-      "gold": 1435,
+      "gold": 1000,
       "currentLevel": 1,
-      "createDate": 1739374417511,
-      "buyTimes": 4,
-      "buyCellTimes": 6,
-      "unlockedCharacters": [
+      "createDate": 1739889059750,
+      "buyTimes": 0,
+      "buyCellTimes": 0,
+      "unlockFighters": [
         101
       ],
-      "onlineReward": 5.4,
+      "onlineReward": 0,
       "finishGuides": [],
       "hasUsedFireBall": false,
       "formation": [
         {
           "id": 1,
-          "soldierId": 101
+          "fighterId": 101
         },
         {
           "id": 2,
-          "soldierId": 101
+          "fighterId": 101
         },
         {
           "id": 3,
-          "soldierId": 101
-        },
-        {
-          "id": 4,
-          "soldierId": 201
-        },
-        {
-          "id": 5,
-          "soldierId": 201
-        },
-        {
-          "id": 6,
-          "soldierId": 201
-        },
-        {
-          "id": 7,
-          "soldierId": 201
+          "fighterId": 101
         }
       ]
     },
     {
-      "id": "c21f7e16-1aa4-4fbc-b56d-cc2a60fcea63",
-      "name": "123",
+      "id": "0116cb3f-484b-46a6-b959-0f5b8e3e2f31",
+      "name": "hzx",
       "gold": 1000,
       "currentLevel": 1,
-      "createDate": 1739422740951,
+      "createDate": 1739889152868,
       "buyTimes": 0,
       "buyCellTimes": 0,
-      "unlockedCharacters": [
+      "unlockFighters": [
         101
       ],
-      "onlineReward": 41.1,
+      "onlineReward": 0,
       "finishGuides": [],
       "hasUsedFireBall": false,
       "formation": [
         {
           "id": 1,
-          "soldierId": 101
+          "fighterId": 101
         },
         {
           "id": 2,
-          "soldierId": 101
+          "fighterId": 101
         },
         {
           "id": 3,
-          "soldierId": 101
+          "fighterId": 101
         }
       ]
     }

@@ -17,7 +17,7 @@ const defaultData = {
   createDate: Date.now(), //记录创建时间
   buyTimes: 0, //购买次数
   buyCellTimes: 0, //购买格子的次数
-  unlockedCharacters: [], //已解锁士兵
+  unlockFighters: [], //已解锁士兵
   onlineReward: 0, //在线奖励的数值
   finishGuides: [], //完成的引导步骤
   hasUsedFireBall: false, //是否使用过火球技能
@@ -96,22 +96,22 @@ app.post('/users', (req, res) => {
     createDate: Date.now(),
     buyTimes: 0,
     buyCellTimes: 0,
-    unlockedCharacters: [101],
+    unlockFighters: [101],
     onlineReward: 0,
     finishGuides: [],
     hasUsedFireBall: false,
     formation: [
       {
         id: 1,
-        soldierId: 101,
+        fighterId: 101,
       },
       {
         id: 2,
-        soldierId: 101,
+        fighterId: 101,
       },
       {
         id: 3,
-        soldierId: 101,
+        fighterId: 101,
       },
     ],
   };
