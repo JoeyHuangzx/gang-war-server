@@ -17,11 +17,24 @@ const defaultData = {
   createDate: Date.now(), //记录创建时间
   buyTimes: 0, //购买次数
   buyCellTimes: 0, //购买格子的次数
-  unlockFighters: [], //已解锁士兵
-  onlineReward: 0, //在线奖励的数值
-  finishGuides: [], //完成的引导步骤
-  hasUsedFireBall: false, //是否使用过火球技能
-  formation: [],
+  unlockFighters: [101],
+  onlineReward: 0,
+  finishGuides: [],
+  hasUsedFireBall: false,
+  formation: [
+    {
+      id: 1,
+      fighterId: 101,
+    },
+    {
+      id: 2,
+      fighterId: 101,
+    },
+    {
+      id: 3,
+      fighterId: 101,
+    },
+  ],
 };
 
 // 设置数据存储文件和数据库类型

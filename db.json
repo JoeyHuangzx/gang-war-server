@@ -17,16 +17,31 @@
     {
       "id": "6145cab6-b39b-4b26-aa41-f4b0c8774fae",
       "name": "hzx",
-      "gold": 100,
-      "currentLevel": 1,
-      "createDate": 1741589516805,
+      "gold": 130,
+      "currentLevel": 2,
+      "createDate": 1741590659442,
       "buyTimes": 0,
       "buyCellTimes": 0,
-      "unlockFighters": [],
-      "onlineReward": 0.3,
+      "unlockFighters": [
+        101
+      ],
+      "onlineReward": 7.2,
       "finishGuides": [],
       "hasUsedFireBall": false,
-      "formation": []
+      "formation": [
+        {
+          "id": 1,
+          "fighterId": 101
+        },
+        {
+          "id": 2,
+          "fighterId": 101
+        },
+        {
+          "id": 3,
+          "fighterId": 101
+        }
+      ]
     },
     {
       "id": "1a793b32-d92b-423e-8908-7c5784eae741",
