@@ -17,15 +17,29 @@
     {
       "id": "6145cab6-b39b-4b26-aa41-f4b0c8774fae",
       "name": "hzx",
-      "gold": 1000,
+      "gold": 100,
       "currentLevel": 1,
-      "createDate": 1739889059750,
+      "createDate": 1741589516805,
+      "buyTimes": 0,
+      "buyCellTimes": 0,
+      "unlockFighters": [],
+      "onlineReward": 0.3,
+      "finishGuides": [],
+      "hasUsedFireBall": false,
+      "formation": []
+    },
+    {
+      "id": "1a793b32-d92b-423e-8908-7c5784eae741",
+      "name": "test01",
+      "gold": 1110,
+      "currentLevel": 3,
+      "createDate": 1741339738484,
       "buyTimes": 0,
       "buyCellTimes": 0,
       "unlockFighters": [
         101
       ],
-      "onlineReward": 0,
+      "onlineReward": 909.9,
       "finishGuides": [],
       "hasUsedFireBall": false,
       "formation": [
@@ -44,17 +58,58 @@
       ]
     },
     {
-      "id": "0116cb3f-484b-46a6-b959-0f5b8e3e2f31",
-      "name": "hzx",
-      "gold": 1000,
+      "id": "39f66792-65f5-49a6-9671-3571090bd6e0",
+      "name": "test02",
+      "gold": 1060,
       "currentLevel": 1,
-      "createDate": 1739889152868,
+      "createDate": 1741582836001,
       "buyTimes": 0,
       "buyCellTimes": 0,
       "unlockFighters": [
         101
       ],
-      "onlineReward": 0,
+      "onlineReward": 40.5,
+      "finishGuides": [],
+      "hasUsedFireBall": false,
+      "formation": [
+        {
+          "id": 1,
+          "fighterId": 101
+        },
+        {
+          "id": 2,
+          "fighterId": 101
+        },
+        {
+          "id": 3,
+          "fighterId": 101
+        },
+        {
+          "id": 4,
+          "fighterId": 601
+        },
+        {
+          "id": 5,
+          "fighterId": 701
+        },
+        {
+          "id": 6,
+          "fighterId": 401
+        }
+      ]
+    },
+    {
+      "id": "7e633913-bbfc-4781-be2e-4099c5bd1b02",
+      "name": "test03",
+      "gold": 1180,
+      "currentLevel": 7,
+      "createDate": 1741588415760,
+      "buyTimes": 0,
+      "buyCellTimes": 0,
+      "unlockFighters": [
+        101
+      ],
+      "onlineReward": 44.1,
       "finishGuides": [],
       "hasUsedFireBall": false,
       "formation": [

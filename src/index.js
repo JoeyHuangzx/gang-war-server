@@ -56,7 +56,7 @@ app.get('/users', (req, res) => {
 // 获取单个用户数据
 app.get('/login', (req, res) => {
   const { name } = req.query;
-  console.log(`Received request for user with name: ${name}`);
+  console.log(`登录数据 user with name: ${name}`);
 
   if (!name) {
     return sendResponse(res, { error: 'Name is required' }, 400);
@@ -127,7 +127,7 @@ app.post('/users', (req, res) => {
 // 更新用户数据
 app.put('/users/:id', (req, res) => {
   const userId = req.params.id;
-  console.log(`Received request to update user with ID: ${userId}`);
+  console.log(`更新数据 user with ID: ${userId}`);
   const updatedData = req.body;
   const userIndex = db.data?.users.findIndex(u => u.id === userId);
 
@@ -143,7 +143,7 @@ app.put('/users/:id', (req, res) => {
 
 // 删除用户
 app.delete('/users/:id', (req, res) => {
-  const userId = Number(req.params.id);
+  const userId = req.params.id;
   const userIndex = db.data?.users.findIndex(u => u.id === userId);
 
   if (userIndex !== undefined && userIndex >= 0) {
@@ -153,6 +153,22 @@ app.delete('/users/:id', (req, res) => {
       .catch(error => sendResponse(res, null, 500, 'Error deleting user: ' + error));
   } else {
     sendResponse(res, null, 201, 'User not found');
+  }
+});
+
+// 重置用户数据
+app.put('/users/:id/reset', (req, res) => {
+  const userId = req.params.id;
+  console.log(`重置用户数据 user with ID: ${userId}`);
+  const userIndex = db.data?.users.findIndex(u => u.id === userId);
+
+  if (userIndex !== undefined && userIndex >= 0) {
+    db.data.users[userIndex] = { ...defaultData, id: db.data.users[userIndex].id, name: db.data.users[userIndex].name };
+    db.write()
+      .then(() => sendResponse(res, db.data.users[userIndex]))
+      .catch(error => sendResponse(res, null, 500, 'Error resetting user: ' + error));
+  } else {
+    sendResponse(res, { error: 'User not found' }, 404);
   }
 });
 
